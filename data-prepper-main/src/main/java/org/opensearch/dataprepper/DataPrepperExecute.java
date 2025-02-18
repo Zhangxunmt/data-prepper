@@ -24,6 +24,7 @@ public class DataPrepperExecute {
         System.setProperty("software.amazon.awssdk.http.service.impl", "software.amazon.awssdk.http.apache.ApacheSdkHttpService");
 
         final ContextManager contextManager;
+        System.setProperty("data-prepper.dir", "/Users/xunzh");
         if (args.length == 0) {
             final String dataPrepperHome = System.getProperty("data-prepper.dir");
             if (dataPrepperHome == null) {
